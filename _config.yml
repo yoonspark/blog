@@ -1,0 +1,9 @@
+# set basic options
+title: Datum Vitae
+author: Sangyoon Park
+email: DatumVitae@gmail.com
+github_username: yoonspark
+
+# build settings
+markdown: kramdown
+theme: minima
