@@ -21,7 +21,15 @@ A pivotal way to achieve integrity of project directory is to house all relevant
 
 A recommended practice is to have "Data" sub-directory in every project directory and keep all relevant raw data and data wrangling scripts (as well as derived data sets) in this sub-directory.  Personally, I organize this "Data" directory such that raw data are saved in a separate space (aptly named "Raw_Data") and data wrangling processes are organized into other sub-directories (e.g., "Build_SchoolLevel_Attendance").
 
-Another practice essential to integrity of project directory is to use relative pathnames.  Hence, use `../../Data/Build_SchoolLevel_Attendance/attd_schlvl.RData` (relative pathname) rather than `/export/usiccsr/projects/SchoolSupportNetworks/Data/Build_SchoolLevel_Attendance/attd_schlvl.RData` (absolute pathname).  This will protect the project directory from broken pathnames that may result from the system-level reorganization.
+Another practice essential to integrity of project directory is to use relative pathnames.  Hence, use
+```
+../../Data/Build_SchoolLevel_Attendance/attd_schlvl.RData
+```
+rather than
+```
+/export/usiccsr/projects/SchoolSupportNetworks/Data/Build_SchoolLevel_Attendance/attd_schlvl.RData
+```
+This will protect the project directory from broken pathnames that may result from the system-level reorganization.
 
 # Version Control
 
