@@ -5,6 +5,7 @@ title: Organizing Project Directory
 
 A crucial element for reproducible research is simple, transparent, and consistent organization of data and analysis scripts.  In this post, I share some of the practices I have adopted and developed in my work as a research analyst.
 
+
 # Consistent Naming Conventions
 
 For effective organization of the project directory, it is helpful to develop and maintain some consistent naming conventions.  For instance, I always put the prefix "mod" to analysis scripts whose major aim is model-fitting; "make_rdata" to scripts that transforms data into a desired set of R objects and save them in RData format; and so on.  This practice helps me to not only quickly come up with an appropriate file name but also more easily locate each file later.  Having a set of consistent naming conventions saves one much time like a well-established habit.
@@ -12,6 +13,7 @@ For effective organization of the project directory, it is helpful to develop an
 Another practice I have adopted is use capitalized "snake case" to name directories and lowercase one to name files.  Hence, directory names follow the format "Example_Directory_Name"; and file names "example_file_name.extension".  The capitalization helps me (and others who are informed of the convention) to better distinguish directories from files.
 
 Note that directory and file names should be concise yet descriptive enough.  For instance, `mod1.R` is not a good file name; `mod_gpa_vs_demog.R` is better.
+
 
 # Integrity of Each Project Directory
 
@@ -31,10 +33,13 @@ rather than
 ```
 This will protect the project directory from broken pathnames that may result from the system-level reorganization.
 
+
 # Version Control
 
 Once the backbone of the project directory is set in place, the directory should then be version-controlled using such tools as Git.  For more complete reproducibility, we would need to version-control all raw data along with wrangling and analysis scripts.  Given data confidentiality needs and restrictions, however, we may need to confine version-control to wrangling and analysis scripts only.  Even so, we will essentially turn the project directory into a coherent machinery that will always reproduce consistent results as long as the same set of raw data are placed in the right place (i.e. "Raw_Data" sub-directory discussed above).
 
+
 ---
+
 
 I am aware these discussions may sound quite abstract.  Unfortunately, I cannot put my work projects on the public domain due to confidentiality issues.  Hopefully, I can soon start a new personal project through which I can better demonstrate the points I made in this post.
